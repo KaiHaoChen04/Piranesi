@@ -8,3 +8,30 @@
     width: 2px;
     height: 2px;
 }
+.navbar .logo{
+    width: 150px;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #495549;
+    font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid tomato;
+    color: #495549;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color:azure;
+}
