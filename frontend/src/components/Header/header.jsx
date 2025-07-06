@@ -5,7 +5,7 @@ const header = () => {
   return (
     <div className='header'>
       <div className="header-contents">
-        <h2>Understand how and where your fashion is created</h2>
+        <h2>Understand How and Where your Fashion is Created</h2>
         <button>View Collections</button>
       </div>
     </div>
