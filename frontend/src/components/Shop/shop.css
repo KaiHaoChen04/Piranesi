@@ -1,0 +1,14 @@
+.shop-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Collection-Lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x:scroll;
+}
