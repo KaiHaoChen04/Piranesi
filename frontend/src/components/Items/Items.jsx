@@ -1,12 +1,20 @@
 import React from 'react'
+import { useState } from 'react'
 import './Items.css'
 import ratingsImg from '../../assets/rating_starts.png'
+import whiteAdd from '../../assets/add_icon_white.png'
 
 const Items = ({id, name, price, description, image}) => {
+    const [itemCount, setItemCount] = useState(0);
   return (
     <div  className='item'>
       <div className='item-img-container'>
         <img className = 'item-img'src={image} alt="" />
+        {
+          !itemCount
+          ?<img className='add' onClick={()=>setItemCount(prev=>prev+1)}src={whiteAdd} alt="" />
+          :<div className='item-counter'></div>
+        }
       </div>
       <div className="item-info">
          <div className="item-name-rating">
