@@ -8,7 +8,7 @@ const Display = ({category}) => {
   return (
     <div className='display' id='display'>
       <h2>Most Popular</h2>
-      <div className='food-display-list'>
+      <div className='display-list'>
         {food_list.map((items, index) => {
             return <Items key = {index} 
                         id = {items.id} 
