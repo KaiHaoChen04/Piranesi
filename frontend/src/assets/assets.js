@@ -123,7 +123,7 @@ export const food_list = [
         image: food_1,
         price: 12,
         description: "1990s European Style",
-        category: "British"
+        category: "Jorts"
     },
     {
         id: "2",
@@ -131,77 +131,77 @@ export const food_list = [
         image: food_2,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Shirts"
     }, {
         id: "3",
         name: "Clover Salad",
         image: food_3,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Jackets"
     }, {
         id: "4",
         name: "Chicken Salad",
         image: food_4,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Bandanas"
     }, {
         id: "5",
         name: "Lasagna Rolls",
         image: food_5,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Jorts"
     }, {
         id: "6",
         name: "Peri Peri Rolls",
         image: food_6,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Hats"
     }, {
         id: "7",
         name: "Chicken Rolls",
         image: food_7,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Pants"
     }, {
         id: "8",
         name: "Veg Rolls",
         image: food_8,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Shirts"
     }, {
         id: "9",
         name: "Ripple Ice Cream",
         image: food_9,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Accessories"
     }, {
         id: "10",
         name: "Fruit Ice Cream",
         image: food_10,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Pants"
     }, {
         id: "11",
         name: "Jar Ice Cream",
         image: food_11,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Shirts"
     }, {
         id: "12",
         name: "Vanilla Ice Cream",
         image: food_12,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Sweater/Hoodies"
     },
     {
         id: "13",
@@ -209,7 +209,7 @@ export const food_list = [
         image: food_13,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Sweater/Hoodies"
     },
     {
         id: "14",
@@ -217,77 +217,77 @@ export const food_list = [
         image: food_14,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Shirts"
     }, {
         id: "15",
         name: "Grilled Sandwich",
         image: food_15,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Hats"
     }, {
         id: "16",
         name: "Bread Sandwich",
         image: food_16,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Hats"
     }, {
         id: "17",
         name: "Cup Cake",
         image: food_17,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Bandanas"
     }, {
         id: "18",
         name: "Vegan Cake",
         image: food_18,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Bandanas"
     }, {
         id: "19",
         name: "Butterscotch Cake",
         image: food_19,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Bandanas"
     }, {
         id: "20",
         name: "Sliced Cake",
         image: food_20,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Shirts"
     }, {
         id: "21",
         name: "Garlic Mushroom ",
         image: food_21,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Pants"
     }, {
         id: "22",
         name: "Fried Cauliflower",
         image: food_22,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Pants"
     }, {
         id: "23",
         name: "Mix Veg Pulao",
         image: food_23,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Pants"
     }, {
         id: "24",
         name: "Rice Zucchini",
         image: food_24,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Jackets"
     },
     {
         id: "25",
@@ -295,7 +295,7 @@ export const food_list = [
         image: food_25,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
+        category: "Jackets"
     },
     {
         id: "26",
@@ -303,48 +303,48 @@ export const food_list = [
         image: food_26,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
+        category: "Jackets"
     }, {
         id: "27",
         name: "Creamy Pasta",
         image: food_27,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
+        category: "Jorts"
     }, {
         id: "28",
         name: "Chicken Pasta",
         image: food_28,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
+        category: "Jorts"
     }, {
         id: "29",
         name: "Buttter Noodles",
         image: food_29,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        category: "Hats"
     }, {
         id: "30",
         name: "Veg Noodles",
         image: food_30,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        category: "Accessories"
     }, {
         id: "31",
         name: "Somen Noodles",
         image: food_31,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        category: "Sweater/Hoodies"
     }, {
         id: "32",
         name: "Cooked Noodles",
         image: food_32,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        category: "Accessories"
     }
 ]

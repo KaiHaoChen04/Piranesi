@@ -10,13 +10,16 @@ const Display = ({category}) => {
       <h2>Most Popular</h2>
       <div className='display-list'>
         {food_list.map((items, index) => {
-            return <Items key = {index} 
+          {console.log(category,items.category);}
+            if(category==="All" || category===items.category){ /* This displays the items based on selected items */
+              return <Items key = {index} 
                         id = {items.id} 
                         name = {items.name} 
                         price = {items.price} 
                         description = {items.description} 
                         image = {items.image}/>
-        })}
+            } 
+            })}
       </div>
     </div>
   )
