@@ -4,7 +4,7 @@ import {useState} from 'react';
 import { assets } from '../../assets/assets';
 
 const LogInPopUp = ({setShowLogin}) => {
-    const [currentState, setCurrentState] = useState("Sign up")
+    const [currentState, setCurrentState] = useState("Login")
   return (
     <div className='LogInPopUp'>
         <form className='login-container'>
@@ -13,11 +13,18 @@ const LogInPopUp = ({setShowLogin}) => {
                 <img onClick={()=>setShowLogin(false)}src={assets.cross_icon} alt="" />
             </div>
             <div className='login-input'>
-                <input type="text" placeholder='Your Name' required/>
+                {currentState==="Login"?<></>:<input type="text" placeholder='Your Name' required/>}
                 <input type="email" placeholder='Your email' required/>
                 <input type="password" placeholder='Your Password' required />
             </div>
             <button>{currentState==="Sign Up"?"Create Account":"Login"}</button>
+            <div className="login-condition">
+                <input type="checkbox" required/>
+                <p>I agree to the terms and services</p>
+            </div>
+            {currentState==="Sign Up"
+            ?<p>Create a new account? <span onClick={()=>setCurrentState("Sign Up")}>Click here</span></p>
+            :<p>Already have an account? <span onClick={()=>setCurrentState("Login")}>Login here</span></p>}
         </form>
     </div>
   )
