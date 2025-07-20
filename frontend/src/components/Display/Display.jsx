@@ -4,12 +4,12 @@ import { StoreContext } from '../../context/StoreContext'
 import Items from '../Items/Items'
 
 const Display = ({category}) => {
-    const {food_list} = useContext(StoreContext)
+    const {clothes_list} = useContext(StoreContext)
   return (
     <div className='display' id='display'>
       <h2>Most Popular</h2>
       <div className='display-list'>
-        {food_list.map((items, index) => {
+        {clothes_list.map((items, index) => {
           {console.log(category,items.category);}
             if(category==="All" || category===items.category){ /* This displays the items based on selected items */
               return <Items key = {index} 

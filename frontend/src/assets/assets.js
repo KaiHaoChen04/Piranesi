@@ -11,38 +11,38 @@ import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 
-import food_1 from './food_1.png'
-import food_2 from './food_2.png'
-import food_3 from './food_3.png'
-import food_4 from './food_4.png'
-import food_5 from './food_5.png'
-import food_6 from './food_6.png'
-import food_7 from './food_7.png'
-import food_8 from './food_8.png'
-import food_9 from './food_9.png'
-import food_10 from './food_10.png'
-import food_11 from './food_11.png'
-import food_12 from './food_12.png'
-import food_13 from './food_13.png'
-import food_14 from './food_14.png'
-import food_15 from './food_15.png'
-import food_16 from './food_16.png'
-import food_17 from './food_17.png'
-import food_18 from './food_18.png'
-import food_19 from './food_19.png'
-import food_20 from './food_20.png'
-import food_21 from './food_21.png'
-import food_22 from './food_22.png'
-import food_23 from './food_23.png'
-import food_24 from './food_24.png'
-import food_25 from './food_25.png'
-import food_26 from './food_26.png'
-import food_27 from './food_27.png'
-import food_28 from './food_28.png'
-import food_29 from './food_29.png'
-import food_30 from './food_30.png'
-import food_31 from './food_31.png'
-import food_32 from './food_32.png'
+import clothes_1 from './clothes_1.png'
+import clothes_2 from './clothes_2.png'
+import clothes_3 from './clothes_3.png'
+import clothes_4 from './clothes_4.png'
+import clothes_5 from './clothes_5.png'
+import clothes_6 from './clothes_6.png'
+import clothes_7 from './clothes_7.png'
+import clothes_8 from './clothes_8.png'
+import clothes_9 from './clothes_9.png'
+import clothes_10 from './clothes_10.png'
+import clothes_11 from './clothes_11.png'
+import clothes_12 from './clothes_12.png'
+import clothes_13 from './clothes_13.png'
+import clothes_14 from './clothes_14.png'
+import clothes_15 from './clothes_15.png'
+import clothes_16 from './clothes_16.png'
+import clothes_17 from './clothes_17.png'
+import clothes_18 from './clothes_18.png'
+import clothes_19 from './clothes_19.png'
+import clothes_20 from './clothes_20.png'
+import clothes_21 from './clothes_21.png'
+import clothes_22 from './clothes_22.png'
+import clothes_23 from './clothes_23.png'
+import clothes_24 from './clothes_24.png'
+import clothes_25 from './clothes_25.png'
+import clothes_26 from './clothes_26.png'
+import clothes_27 from './clothes_27.png'
+import clothes_28 from './clothes_28.png'
+import clothes_29 from './clothes_29.png'
+import clothes_30 from './clothes_30.png'
+import clothes_31 from './clothes_31.png'
+import clothes_32 from './clothes_32.png'
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -116,11 +116,11 @@ export const menu_list = [
         menu_image: menu_8
     }]
 
-export const food_list = [
+export const clothes_list = [
     {
         id: "1",
         name: "Greek salad",
-        image: food_1,
+        image: clothes_1,
         price: 12,
         description: "1990s European Style",
         category: "Jorts"
@@ -128,223 +128,223 @@ export const food_list = [
     {
         id: "2",
         name: "Veg salad",
-        image: food_2,
+        image: clothes_2,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "3",
         name: "Clover Salad",
-        image: food_3,
+        image: clothes_3,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jackets"
     }, {
         id: "4",
         name: "Chicken Salad",
-        image: food_4,
+        image: clothes_4,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "5",
         name: "Lasagna Rolls",
-        image: food_5,
+        image: clothes_5,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jorts"
     }, {
         id: "6",
         name: "Peri Peri Rolls",
-        image: food_6,
+        image: clothes_6,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "7",
         name: "Chicken Rolls",
-        image: food_7,
+        image: clothes_7,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "8",
         name: "Veg Rolls",
-        image: food_8,
+        image: clothes_8,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "9",
         name: "Ripple Ice Cream",
-        image: food_9,
+        image: clothes_9,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Accessories"
     }, {
         id: "10",
         name: "Fruit Ice Cream",
-        image: food_10,
+        image: clothes_10,
         price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "11",
         name: "Jar Ice Cream",
-        image: food_11,
+        image: clothes_11,
         price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "12",
         name: "Vanilla Ice Cream",
-        image: food_12,
+        image: clothes_12,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Sweater/Hoodies"
     },
     {
         id: "13",
         name: "Chicken Sandwich",
-        image: food_13,
+        image: clothes_13,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Sweater/Hoodies"
     },
     {
         id: "14",
         name: "Vegan Sandwich",
-        image: food_14,
+        image: clothes_14,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "15",
         name: "Grilled Sandwich",
-        image: food_15,
+        image: clothes_15,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "16",
         name: "Bread Sandwich",
-        image: food_16,
+        image: clothes_16,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "17",
         name: "Cup Cake",
-        image: food_17,
+        image: clothes_17,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "18",
         name: "Vegan Cake",
-        image: food_18,
+        image: clothes_18,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "19",
         name: "Butterscotch Cake",
-        image: food_19,
+        image: clothes_19,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "20",
         name: "Sliced Cake",
-        image: food_20,
+        image: clothes_20,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "21",
         name: "Garlic Mushroom ",
-        image: food_21,
+        image: clothes_21,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "22",
         name: "Fried Cauliflower",
-        image: food_22,
+        image: clothes_22,
         price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "23",
         name: "Mix Veg Pulao",
-        image: food_23,
+        image: clothes_23,
         price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "24",
         name: "Rice Zucchini",
-        image: food_24,
+        image: clothes_24,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jackets"
     },
     {
         id: "25",
         name: "Cheese Pasta",
-        image: food_25,
+        image: clothes_25,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jackets"
     },
     {
         id: "26",
         name: "Tomato Pasta",
-        image: food_26,
+        image: clothes_26,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jackets"
     }, {
         id: "27",
         name: "Creamy Pasta",
-        image: food_27,
+        image: clothes_27,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jorts"
     }, {
         id: "28",
         name: "Chicken Pasta",
-        image: food_28,
+        image: clothes_28,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jorts"
     }, {
         id: "29",
         name: "Buttter Noodles",
-        image: food_29,
+        image: clothes_29,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "30",
         name: "Veg Noodles",
-        image: food_30,
+        image: clothes_30,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Accessories"
     }, {
         id: "31",
         name: "Somen Noodles",
-        image: food_31,
+        image: clothes_31,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Sweater/Hoodies"
     }, {
         id: "32",
         name: "Cooked Noodles",
-        image: food_32,
+        image: clothes_32,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "clothes provides essential nutrients for overall health and well-being",
         category: "Accessories"
     }
 ]

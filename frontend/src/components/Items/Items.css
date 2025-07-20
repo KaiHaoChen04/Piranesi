@@ -8,7 +8,11 @@
 }
 .item-img{
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    max-width: 200px;    /* or whatever max width you want */
+    height: 200px;       /* or your preferred height */
+    object-fit: contain; /* keeps aspect ratio, fits inside box */
+    display:flex;
+    margin: 0 auto;
 }
 .item-info{
     padding: 20px; /* The size and position */
