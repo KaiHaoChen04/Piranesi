@@ -119,7 +119,7 @@ export const menu_list = [
 export const clothes_list = [
     {
         id: "1",
-        name: "Greek salad",
+        name: "Celine Jorts",
         image: clothes_1,
         price: 12,
         description: "1990s European Style",
@@ -127,77 +127,77 @@ export const clothes_list = [
     },
     {
         id: "2",
-        name: "Veg salad",
+        name: "Japanese Blossom",
         image: clothes_2,
         price: 18,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "3",
-        name: "Clover Salad",
+        name: "Ancient Ghost",
         image: clothes_3,
         price: 16,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jackets"
     }, {
         id: "4",
-        name: "Chicken Salad",
+        name: "Classic Bandana",
         image: clothes_4,
         price: 24,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "5",
-        name: "Lasagna Rolls",
+        name: "Roar Jorts",
         image: clothes_5,
         price: 14,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jorts"
     }, {
         id: "6",
-        name: "Peri Peri Rolls",
+        name: "pgLang Hat",
         image: clothes_6,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "7",
-        name: "Chicken Rolls",
+        name: "Slim Jeans",
         image: clothes_7,
         price: 20,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "8",
-        name: "Veg Rolls",
+        name: "Tide Waves",
         image: clothes_8,
         price: 15,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "9",
-        name: "Ripple Ice Cream",
+        name: "Man Aesthetic Ring",
         image: clothes_9,
         price: 14,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Accessories"
     }, {
         id: "10",
-        name: "Fruit Ice Cream",
+        name: "Japanese oversized pj",
         image: clothes_10,
         price: 22,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "11",
-        name: "Jar Ice Cream",
+        name: "Tree Bloom",
         image: clothes_11,
         price: 10,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "12",
-        name: "Vanilla Ice Cream",
+        name: "Flower Hoodie",
         image: clothes_12,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
@@ -205,7 +205,7 @@ export const clothes_list = [
     },
     {
         id: "13",
-        name: "Chicken Sandwich",
+        name: "Plain Blank Hoodie",
         image: clothes_13,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
@@ -213,77 +213,77 @@ export const clothes_list = [
     },
     {
         id: "14",
-        name: "Vegan Sandwich",
+        name: "Simple Black t-shirt",
         image: clothes_14,
         price: 18,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "15",
-        name: "Grilled Sandwich",
+        name: "Through the Wire Hat",
         image: clothes_15,
         price: 16,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "16",
-        name: "Bread Sandwich",
+        name: "Tyler the Creator hat",
         image: clothes_16,
         price: 24,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "17",
-        name: "Cup Cake",
+        name: "Japanese Bandana blue",
         image: clothes_17,
         price: 14,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "18",
-        name: "Vegan Cake",
+        name: "Japanese Bandana Red",
         image: clothes_18,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "19",
-        name: "Butterscotch Cake",
+        name: "Japanese Bandana Ocean",
         image: clothes_19,
         price: 20,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Bandanas"
     }, {
         id: "20",
-        name: "Sliced Cake",
+        name: "Green line flannel",
         image: clothes_20,
         price: 15,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Shirts"
     }, {
         id: "21",
-        name: "Garlic Mushroom ",
+        name: "Work Silk Pants",
         image: clothes_21,
         price: 14,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "22",
-        name: "Fried Cauliflower",
+        name: "Comfy Sweatpants",
         image: clothes_22,
         price: 22,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "23",
-        name: "Mix Veg Pulao",
+        name: "Cargo Oversized",
         image: clothes_23,
         price: 10,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Pants"
     }, {
         id: "24",
-        name: "Rice Zucchini",
+        name: "Military Green Jacket",
         image: clothes_24,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
@@ -291,7 +291,7 @@ export const clothes_list = [
     },
     {
         id: "25",
-        name: "Cheese Pasta",
+        name: "Casual flex Jacket Caramel",
         image: clothes_25,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
@@ -299,49 +299,49 @@ export const clothes_list = [
     },
     {
         id: "26",
-        name: "Tomato Pasta",
+        name: "Horseboy back Jacket",
         image: clothes_26,
         price: 18,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jackets"
     }, {
         id: "27",
-        name: "Creamy Pasta",
+        name: "LightOcean Jorts",
         image: clothes_27,
         price: 16,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jorts"
     }, {
         id: "28",
-        name: "Chicken Pasta",
+        name: "Brown Smooth Jorts",
         image: clothes_28,
         price: 24,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Jorts"
     }, {
         id: "29",
-        name: "Buttter Noodles",
+        name: "LA Dodgers Custom",
         image: clothes_29,
         price: 14,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Hats"
     }, {
         id: "30",
-        name: "Veg Noodles",
+        name: "Simple Man Necklace",
         image: clothes_30,
         price: 12,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Accessories"
     }, {
         id: "31",
-        name: "Somen Noodles",
+        name: "Plain text Hoodie",
         image: clothes_31,
         price: 20,
         description: "clothes provides essential nutrients for overall health and well-being",
         category: "Sweater/Hoodies"
     }, {
         id: "32",
-        name: "Cooked Noodles",
+        name: "Bracelet for Courage",
         image: clothes_32,
         price: 15,
         description: "clothes provides essential nutrients for overall health and well-being",
