@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import './cart.css'
+import './Cart.css'
 import { StoreContext } from '../../context/StoreContext';
 
 const Cart = () => {
@@ -26,9 +26,9 @@ const Cart = () => {
               <div className='cart-item-titles cart-items-item'>
                 <img src={item.image} alt="" />
                 <p>{item.name}</p>
-                <p>{item.price}</p>
+                <p>${item.price}</p>
                 <p>{cartItem[item.id]}</p>
-                <p>{item.price*cartItem[item.id]}</p>
+                <p>${item.price*cartItem[item.id]}</p>
                 <p>x</p>
               </div>
             )
