@@ -15,3 +15,29 @@
 .cart-items-item .cross{
     cursor: pointer;
 }
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px)
+}
+.cart-total{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-total button{
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding:12px 0px;
+    width: max(20vw, 200px);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+}
