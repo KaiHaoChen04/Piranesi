@@ -18,6 +18,17 @@ const StoreContextProvider = (props) => {
     const removeFromCart = (itemID) => {
         setCartItem((prev)=>({...prev,[itemID]:prev[itemID]-1}))
     }
+    const getTotalCartAmount = () => {
+        let totalAmount = 0;
+        for(const item in cartItem)
+        {
+            if(cartItem[item]>0){
+                let itemInfo = clothes_list.find((product)=>product.id===item)
+                totalAmount+=itemInfo.price*cartItem[item]
+            }
+        }
+        return totalAmount;
+    }
 
     useEffect(()=>{
         console.log(cartItem)
@@ -28,7 +39,8 @@ const StoreContextProvider = (props) => {
         cartItem,
         setCartItem,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        getTotalCartAmount
     }
 
     return(
