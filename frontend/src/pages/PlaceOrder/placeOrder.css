@@ -1,0 +1,33 @@
+.place-order{
+    gap:50px;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: start;
+}
+.cart-total-details{
+    margin-top: 15px;
+}
+hr{
+    margin-top: 10px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.place-order-left input{
+    padding:10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid black;
+}
+.place-order-left .multi-field{
+    display: flex;
+    gap: 10px;
+}
