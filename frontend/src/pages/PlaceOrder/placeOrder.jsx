@@ -1,21 +1,54 @@
-import React from 'react'
-import './placeOrder.css'
+import React, { useContext } from "react";
+import "./placeOrder.css";
+import { StoreContext } from "../../context/StoreContext";
 
 const placeOrder = () => {
+
+  const {getTotalCartAmount} = useContext(StoreContext)
   return (
-    <form className='place-order'>
+    <form className="place-order">
       <div className="place-order-left">
-        <p className='title'>Delivery Information</p>
+        <p className="title">Delivery Information</p>
         <div className="multi-field">
-          <input type="text" placeholder='First Name'/>
-          <input type="text" placeholder='Last Name'/>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
         </div>
+        <input type="email" placeholder="Enter Email" />
+        <input type="text" placeholder="Street" />
+        <div className="multi-field">
+          <input type="text" placeholder="City" />
+          <input type="text" placeholder="Province" />
+        </div>
+        <div className="multi-field">
+          <input type="text" placeholder="Zip Code" />
+          <input type="text" placeholder="Country" />
+        </div>
+        <input type="text" placeholder="Phone" />
       </div>
       <div className="place-order-right">
-
+        <div className="cart-total">
+          <h2>Cart Totals</h2>
+          <div>
+            <div className="cart-total-details">
+              <p>Subtotal</p>
+              <p>$ {getTotalCartAmount()}</p>
+            </div>
+            <div className="cart-total-details">
+              <p>Delivery Fee</p>
+              <p>$ {2}</p>
+            </div>
+            <div className="cart-total-details">
+              <b>Total</b>
+              <b>$ {getTotalCartAmount() + 2}</b>
+            </div>
+          </div>
+          <button>
+            Proceed To Payment
+          </button>
+        </div>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default placeOrder
+export default placeOrder;

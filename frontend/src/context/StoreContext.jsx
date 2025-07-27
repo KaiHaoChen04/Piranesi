@@ -29,7 +29,7 @@ const StoreContextProvider = (props) => {
             }
         }
         return totalAmount;
-    }
+    } 
 
     useEffect(()=>{
         console.log(cartItem)
