@@ -21,5 +21,3 @@ app.get("/", (req, res)=>{
 app.listen(port, ()=>{
     console.log('server started on http://localhost:{port}');
 })
-
-// mongodb+srv://kaihao:KennyChen123@cluster0.nyojt9k.mongodb.net/?
