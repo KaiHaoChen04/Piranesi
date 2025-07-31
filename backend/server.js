@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import { connectDB } from './config/db.js'
+import clothesRouter from './routes/clothesRoute.js'
 
 
 // app config
@@ -13,6 +14,10 @@ app.use(cors()) // Access the backend from any frontend
 
 // db connection
 connectDB()
+
+//API Endpoints using express.js
+app.use("/api/clothes", clothesRouter);
+
 
 //Server handling request and responding
 app.get("/", (req, res)=>{
