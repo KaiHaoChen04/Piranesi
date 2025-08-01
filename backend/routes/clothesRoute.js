@@ -10,6 +10,8 @@ const storage = multer.diskStorage({
     filename: (req,file,cb)=>{return cb(null,`${Date.now()}${file.originalname}`)} //This arrow function makes our filename unique because every TIME is different
 })
 
-clothesRouter.post('/add', addClothes) //Send data to the server and once the data gets processed we will get a response
+const upload = multer({storage:storage}) //Store the image in the uplaods folder
+
+clothesRouter.post('/add',upload.single("image"), addClothes) //Send data to the server and once the data gets processed we will get a response
 
 export default clothesRouter;

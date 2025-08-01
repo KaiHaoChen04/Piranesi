@@ -2,8 +2,18 @@ import clothes_model from "../models/clothesModel";
 import fs from 'fs'
 
 //Controller function to add food item
-const addClothes = async((req,res)=>{
+//Whenever we hit this API, we will send the name, desc, price, cate, image in the body and access in the backend
+//The frontend will send a POST request and I will parse this data as express.json()
+const addClothes = async (req,res)=>{
+    let image_filename = `${req.file.filename}`
 
-})
+    const clothes = new clothes_model({
+        name:req.body.name,
+        description:req.body.description,
+        price:req.body.price,
+        category:req.body.category,
+        image:image_filename
+    })
+}
 
 export {addClothes} //Export object
