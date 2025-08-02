@@ -14,6 +14,13 @@ const addClothes = async (req,res)=>{
         category:req.body.category,
         image:image_filename
     })
+    try {
+        await clothes.save() // clothes will be saved in the data base
+        res.json({success:true,message:"Clothes added"}) //Return an objecy in json format if succeeded 
+    } catch (error) { //Else if adding clothes unsuccessful
+        console.log(error)
+        res.json({success:false,message:"Error"})
+    }
 }
 
 export {addClothes} //Export object
