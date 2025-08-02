@@ -1,5 +1,5 @@
 import express from "express"
-import { addClothes } from "../controllers/clothesController"
+import { addClothes } from "../controllers/clothesController.js"
 import multer from "multer"
 
 const clothesRouter = express.Router(); // GET, POST, etc... methods
@@ -12,6 +12,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage:storage}) //Store the image in the uplaods folder
 
-clothesRouter.post('/add',upload.single("image"), addClothes) //Send data to the server and once the data gets processed we will get a response
+clothesRouter.post('/add',upload.single("image"), addClothes) //Send data to the server via our /api/clothes endpoint and once the data gets processed we will get a response
 
 export default clothesRouter;

@@ -1,4 +1,4 @@
-import clothes_model from "../models/clothesModel";
+import clothes_model from "../models/clothesModel.js";
 import fs from 'fs'
 
 //Controller function to add food item
@@ -15,11 +15,11 @@ const addClothes = async (req,res)=>{
         image:image_filename
     })
     try {
-        await clothes.save() // clothes will be saved in the data base
-        res.json({success:true,message:"Clothes added"}) //Return an objecy in json format if succeeded 
+        await clothes.save(); // clothes will be saved in the data base
+        res.json({success:true,message:"Clothes added"}); //Return an objecy in json format if succeeded 
     } catch (error) { //Else if adding clothes unsuccessful
-        console.log(error)
-        res.json({success:false,message:"Error"})
+        console.log(error);
+        res.json({success:false,message:"Error"});
     }
 }
 
