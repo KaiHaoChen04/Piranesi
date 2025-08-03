@@ -1,7 +1,7 @@
 import clothes_model from "../models/clothesModel.js";
 import fs from 'fs'
 
-//Controller function to add food item
+//Controller function to add clothes item
 //Whenever we hit this API, we will send the name, desc, price, cate, image in the body and access in the backend
 //The frontend will send a POST request and I will parse this data as express.json()
 const addClothes = async (req,res)=>{
@@ -23,4 +23,15 @@ const addClothes = async (req,res)=>{
     }
 }
 
-export {addClothes} //Export object
+//List all clothes 
+const listClothes = async (req,res) =>{
+    try {
+        const clothes = await clothes_model.find({});
+        res.json({success:true,data:clothes})
+    } catch (error) {
+        console.log(error)
+        res.json({success:false,message:"Failed"})
+    }
+}
+
+export {addClothes,listClothes} //Export object

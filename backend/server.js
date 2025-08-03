@@ -17,6 +17,7 @@ connectDB()
 
 //API Endpoints using express.js
 app.use("/api/clothes", clothesRouter);
+app.use("/images", express.static('uploads')) //This endpoint allows image to be displayed in frontend
 
 
 //Server handling request and responding
