@@ -23,15 +23,29 @@ const addClothes = async (req,res)=>{
     }
 }
 
-//List all clothes 
+//List all clothes function
 const listClothes = async (req,res) =>{
     try {
-        const clothes = await clothes_model.find({});
-        res.json({success:true,data:clothes})
+        const clothes = await clothes_model.find({}); //Find all the objects in the database
+        res.json({success:true,data:clothes});
     } catch (error) {
         console.log(error)
-        res.json({success:false,message:"Failed"})
+        res.json({success:false,message:"Failed"});
     }
 }
 
-export {addClothes,listClothes} //Export object
+//Remove clothes items
+const removeClothes = async(req,res) =>{
+    try {
+        const clothes = await clothes_model.findById(req.body.id); //find clothes model by ID
+        fs.unlink(`uploads/${clothes.image}`,()=>{}) //Remove from uploads folder
+
+        await clothes_model.findByIdAndDelete(req.body.id); //Remove from mongoDB database
+        res.json({success:true, message:"Clothe Removed"})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, message:"Remove item Failed"})
+    }
+}
+
+export {addClothes,listClothes, removeClothes} //Export object

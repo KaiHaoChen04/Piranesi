@@ -1,2 +1,8 @@
 ### Add a new clothing item
-GET http://localhost:4000/api/clothes/list
+POST http://localhost:4000/api/clothes/remove
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": "688f7c702041c918b6eea7b5"
+}
