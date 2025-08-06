@@ -1,7 +1,7 @@
 import React from 'react'
-import './sidebar.css'
+import './Sidebar.css'
 
-const sidebar = () => {
+const Sidebar = () => {
   return (
     <div>
       
@@ -9,4 +9,4 @@ const sidebar = () => {
   )
 }
 
-export default sidebar
+export default Sidebar
