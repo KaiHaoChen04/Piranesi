@@ -24,6 +24,10 @@ img{
     border-radius: 10px 0px 0px 10px;
     cursor: pointer;
 }
+.sidebar-options .active{
+    border-color: tomato;
+    background-color: #fff0ed;
+}
 @media (max-width:900px) {
     .sidebar-options p{
         display: none;
