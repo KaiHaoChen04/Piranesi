@@ -3,16 +3,17 @@ import './Add.css'
 import { assets } from '../../assets/assets'
 
 const Add = () => {
-  const [image, setImage] = useState(false)
+  const [image, setImage] = useState(false); {/* Means no files selected yet  */}
   return (
     <div className='add'>
       <form className='flex-col'>
         <div className="add-image-upload flex-col">
           <p>Upload Image</p>
           <label htmlFor="image">
-            <img src={image?URL.createObjectURL(image):assets.upload_icon} alt=""/>
+            <img src={image?URL.createObjectURL(image):assets.upload_icon} alt=""/> {/* If image state is true, the displaying image will be the selected image object in the array otherwise it will be the upload image */}
           </label>
-          <input onChange={(e)=>setImage(e.target.files[0])}type="file" id="image" hidden required/>
+          {/* This detects a change in the file since we uploaded a file, if detected, it will (event.target.files[0] selects the first file in the array object and sets the image state to the image state aka the file object)*/}
+          <input onChange={(event)=>setImage(event.target.files[0])} type="file" id="image" hidden required/>
         </div>
         <div className='add-product-name flex-col'>
           <p>Product Name</p>
