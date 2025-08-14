@@ -1,9 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Add.css'
 import { assets } from '../../assets/assets'
 
 const Add = () => {
-  const [image, setImage] = useState(false); {/* Means no files selected yet  */}
+  const [image, setImage] = useState(false); {/* Image gets stored in this state variable. False means no files selected yet  */}
+  const [data, setData] = useState({
+    name:"",
+    description:"",
+    price:"",
+    category:"Shirts",
+
+  })
+
+  {/* A universal input handler and fetch the name(ex. name, price, category, description) and takes the value in the input field then updates the data object on the new value*/}
+  const onChangeHandler = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setData(data=>({...data,[name]:value})); {/* [name]:value uses computed property names in JS which if a user types in the price field(name="price"), it will update data.price*/}
+  }
+  {/* Logs the data as an array in the console */}
+  useEffect(()=>{
+    console.log(data)
+  },[data])
+
   return (
     <div className='add'>
       <form className='flex-col'>
@@ -17,16 +36,16 @@ const Add = () => {
         </div>
         <div className='add-product-name flex-col'>
           <p>Product Name</p>
-          <input type="text" name="name" placeholder='Type here'/>
+          <input onChange={onChangeHandler} value = {data.name} type="text" name="name" placeholder='Type here'/>
         </div>
         <div className="add-product-description flex-col">
           <p>Product Description</p>
-          <textarea name="description" rows="6" placeholder='Content' required></textarea>
+          <textarea onChange={onChangeHandler} value = {data.description} name="description" rows="6" placeholder='Content' required></textarea>
         </div>
         <div className="add-category-price">
           <div className="add-category flex-col">
             <p>Product Category</p>
-            <select name="category">
+            <select onChange={onChangeHandler} name="category">
               <option value="Shirts">Shirts</option>
               <option value="Pants">Pants</option>
               <option value="Jackets">Jackets</option>
@@ -39,7 +58,7 @@ const Add = () => {
           </div>
           <div className="add-price flex-col">
             <p>Product price</p>
-            <input type="number" name='price' placeholder='$'/>
+            <input onChange={onChangeHandler} value = {data.price} type="number" name='price' placeholder='$'/>
           </div>
         </div>
         <button type='submit' className='add-bottom'>ADD</button>
