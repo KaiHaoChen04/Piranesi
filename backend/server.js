@@ -27,5 +27,5 @@ app.get("/", (req, res)=>{
 
 //Server initialization
 app.listen(port, ()=>{
-    console.log('server started on http://localhost:{port}');
+    console.log('server started on http://localhost:4000');
 })

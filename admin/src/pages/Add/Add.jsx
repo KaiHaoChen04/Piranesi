@@ -15,7 +15,7 @@ const Add = () => {
     name: "",
     description: "",
     price: "",
-    category: "Shirts",
+    category: "Shirts"
   });
 
   const url = "http://localhost:4000";
@@ -40,12 +40,24 @@ const Add = () => {
       /* This prevents the web from automatically refreshing after submit */
     }
     const formData = new FormData();
-    formData.append("Name", data.name);
-    formData.append("Description", data.description);
-    formData.append("Category", data.category);
-    formData.append("Price", Number(data.price));
-    formData.append("Image",image);
+    formData.append("name", data.name);
+    formData.append("description", data.description);
+    formData.append("category", data.category);
+    formData.append("price", Number(data.price));
+    formData.append("image",image);
     const response = await axios.post(`${url}/api/clothes/add`,formData);
+    if(response.data.success){
+      setData({
+        name: "",
+        description: "",
+        price: "",
+        category: "Shirts"
+      })
+      setImage(false)
+    }
+    else{
+      console.log("error")
+    }
   };
   {
     /* Logs the data as an array in the console */
