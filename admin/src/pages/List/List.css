@@ -1,0 +1,15 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 2px solid #cacaca;
+    font-size:13px;
+}
+.list-table-format.title{
+    background-color: beige;
+}
+img{
+    width: 50px;
+}

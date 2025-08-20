@@ -33,7 +33,7 @@ const List = () => {
           <b>Price</b>
           <b>Action</b>
         </div>
-        {list.map((item, index) => {
+        {list.map((item, index) => { {/* This is the built-in function by JS, item means the object aka our clothes and index is the index of our current object element in the array */}
           return (
             <div key = {index} className='list-table-format'>
               <img src={`${url}/images/`+item.image} alt="" />
