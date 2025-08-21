@@ -38,7 +38,7 @@ const listClothes = async (req,res) =>{
 const removeClothes = async(req,res) =>{
     try {
         const clothes = await clothes_model.findById(req.body.id); //find clothes model by ID
-        fs.unlink(`uploads/${clothes.image}`,()=>{}) //Remove from uploads folder
+        fs.unlink(`uploads/${clothes.image}`,()=>{}) //Remove from uploads folder, the empty arrow function is saying that i dont care about the result or any errors from deleting the file
 
         await clothes_model.findByIdAndDelete(req.body.id); //Remove from mongoDB database
         res.json({success:true, message:"Clothe Removed"})
