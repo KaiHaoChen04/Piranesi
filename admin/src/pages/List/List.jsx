@@ -18,6 +18,12 @@ const List = () => {
       toast.error("error");
     }
   }
+
+  const removeClothes = async (clothesID) => {
+    const response = await axios.post(`${url}/api/clothes/remove`,{id:clothesID}); {/* Remove the clothes by calling the remove API we created in ClothesRoute and ClothesController */}
+    await fetchList(); {/* Update the new list */}
+  }
+
   useEffect(() => {
     fetchList(); {/* We pass in an empty array so the useEffect runs only once and won't ever run again even if it re-renders */}
   }, []);
@@ -40,7 +46,7 @@ const List = () => {
               <p>{item.name}</p>
               <p>{item.category}</p>
               <p>${item.price}</p>
-              <p>X</p>
+              <p onClick={()=>removeClothes(item._id)}className='cursor'>X</p>
             </div>
           )
         })}
