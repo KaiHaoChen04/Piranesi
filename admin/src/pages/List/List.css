@@ -13,6 +13,10 @@
 img{
     width: 50px;
 }
-.cursor{
-    cursor: pointer;
+.cursor {
+  cursor: pointer;
+  display: inline-block; /* Only take up the width of the content */
+  width: fit-content;    /* Shrink to fit the content */
+  text-align: center;    /* Center the X */
+  padding: 0 10px;       /* Add some padding for easier clicking */
 }
