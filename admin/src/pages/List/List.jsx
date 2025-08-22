@@ -22,6 +22,12 @@ const List = () => {
   const removeClothes = async (clothesID) => {
     const response = await axios.post(`${url}/api/clothes/remove`,{id:clothesID}); {/* Remove the clothes by calling the remove API we created in ClothesRoute and ClothesController */}
     await fetchList(); {/* Update the new list */}
+    if (response.data.success){
+      toast.success(response.data.message)
+    }
+    else{
+      toast.error("Error")
+    }
   }
 
   useEffect(() => {
