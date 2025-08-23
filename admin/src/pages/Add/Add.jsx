@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 import axios from 'axios'
 import { toast } from "react-toastify";
 
-const Add = () => {
+const Add = ({url}) => {
   {
     /* Image gets stored in this state variable. False means no files selected yet  */
   }
@@ -18,8 +18,6 @@ const Add = () => {
     price: "",
     category: "Shirts"
   });
-
-  const url = "http://localhost:4000";
 
   {
     /* A universal input handler and fetch the name(ex. name, price, category, description) and takes the value in the input field then updates the data object on the new value*/
