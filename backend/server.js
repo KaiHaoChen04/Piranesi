@@ -3,6 +3,7 @@ import cors from 'cors'
 import { connectDB } from './config/db.js'
 import clothesRouter from './routes/clothesRoute.js'
 import userRouter from './routes/userRoute.js'
+import 'dotenv/config' 
 
 
 // app config
