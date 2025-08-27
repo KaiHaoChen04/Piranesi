@@ -1,8 +1,10 @@
 ### Add a new clothing item
-POST http://localhost:4000/api/clothes/remove
+POST http://localhost:4000/api/user/register
 Content-Type: application/json
 Accept: application/json
 
 {
-    "id": "688f7c752041c918b6eea7bb"
+    "name":"kenny",
+    "password":"12345ooibfqw2",
+    "email":"chenkenny4144@gmail.com"
 }

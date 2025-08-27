@@ -5,7 +5,7 @@ import validator from 'validator'
 
 //login 
 const loginUser = async (req,res) => {
-
+    
 }
 //JSON web token for user authentication, takes user ID as input and uses the secret key from .ENV to sign in
 //The server can later verify this token to confirm the user is legitimate without requiring them to send their password with every request.
