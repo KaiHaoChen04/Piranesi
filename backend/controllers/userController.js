@@ -5,7 +5,23 @@ import validator from 'validator'
 
 //login 
 const loginUser = async (req,res) => {
-    
+    const {email,password} = req.body;
+    try {
+        const user = await userModel.findOne(email);
+        if(!user){
+            return res.json({success:false,message:"User does not exist"});
+        }
+        const matchPassword = await bcrypt.compare(password,user.password);
+        if(!matchPassword){
+            return res.json({success:false, message:"Invalid password, try again"});
+        }
+        const token = createToken(user._id);
+        res.json({success:true,token});
+
+    } catch (error) {
+        
+    }
+
 }
 //JSON web token for user authentication, takes user ID as input and uses the secret key from .ENV to sign in
 //The server can later verify this token to confirm the user is legitimate without requiring them to send their password with every request.
