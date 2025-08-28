@@ -15,7 +15,7 @@ const loginUser = async (req,res) => {
         if(!matchPassword){
             return res.json({success:false, message:"Invalid password, try again"});
         }
-        const token = createToken(user._id);
+        const token = createToken(user._id); //Creates another token for this validated session
         res.json({success:true,token});
 
     } catch (error) {
