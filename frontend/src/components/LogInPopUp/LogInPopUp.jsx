@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './LogInPopUp.css'
 import {useState} from 'react';
 import { assets } from '../../assets/assets';
@@ -16,6 +16,9 @@ const LogInPopUp = ({setShowLogin}) => {
         const value = event.target.value;
         setData(data=>({...data,[name]:value}));
     }
+    useEffect(()=>{
+        console.log(data);
+    },[data])
   return (
     <div className='LogInPopUp'>
         <form className='login-container'>
