@@ -1,8 +1,10 @@
 import './LogInPopUp.css'
-import {useState} from 'react';
+import {useContext, useState} from 'react';
 import { assets } from '../../assets/assets';
+import { StoreContext } from '../../context/StoreContext';
 
 const LogInPopUp = ({setShowLogin}) => {
+    const {url} = useContext(StoreContext);
     const [currentState, setCurrentState] = useState("Login");
     const [data, setData] = useState({
         name:"",
@@ -15,9 +17,13 @@ const LogInPopUp = ({setShowLogin}) => {
         const value = event.target.value;
         setData(data=>({...data,[name]:value}));
     }
+
+    const onLogin = async (event) => {
+        event.preventDefault();
+    }
   return (
     <div className='LogInPopUp'>
-        <form className='login-container'>
+        <form onSubmit = {onLogin} className='login-container'>
             <div className="login-title">
                 <h2>{currentState}</h2>
                 <img onClick={()=>setShowLogin(false)}src={assets.cross_icon} alt="" />
@@ -27,7 +33,7 @@ const LogInPopUp = ({setShowLogin}) => {
                 <input name='email' onChange={onChangeHandler} value={data.email} type="email" placeholder='Your email' required/>
                 <input name='password' onChange={onChangeHandler} value={data.password} type="password" placeholder='Your Password' required />
             </div>
-            <button>{currentState==="Sign Up"?"Create Account":"Login"}</button>
+            <button type='submit'>{currentState==="Sign Up"?"Create Account":"Login"}</button>
             <div className="login-condition">
                 <input type="checkbox" required/>
                 <p>I agree to the terms and services</p>
