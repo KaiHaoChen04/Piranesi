@@ -2,6 +2,7 @@ import './LogInPopUp.css'
 import {useContext, useState} from 'react';
 import { assets } from '../../assets/assets';
 import { StoreContext } from '../../context/StoreContext';
+import axios from 'axios'
 
 const LogInPopUp = ({setShowLogin}) => {
     const {url} = useContext(StoreContext);
@@ -15,11 +16,26 @@ const LogInPopUp = ({setShowLogin}) => {
     const onChangeHandler = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setData(data=>({...data,[name]:value}));
+        setData(data=>({...data,[name]:value}));   
     }
 
     const onLogin = async (event) => {
         event.preventDefault();
+
+        let newURL = url
+
+        if(currentState=="Login"){
+            newURL += "/api/user/login"
+
+        }
+        else{
+            newURL += "/api/user/register"
+        }
+
+        const response = await axios.post(newURL, data);
+        if(response.data.success){
+            
+        }
     }
   return (
     <div className='LogInPopUp'>
