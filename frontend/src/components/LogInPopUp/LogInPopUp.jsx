@@ -5,7 +5,7 @@ import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios'
 
 const LogInPopUp = ({setShowLogin}) => {
-    const {url} = useContext(StoreContext);
+    const {url, setToken} = useContext(StoreContext);
     const [currentState, setCurrentState] = useState("Login");
     const [data, setData] = useState({
         name:"",
@@ -34,7 +34,9 @@ const LogInPopUp = ({setShowLogin}) => {
 
         const response = await axios.post(newURL, data);
         if(response.data.success){
-            
+            setToken(response.data.token); /* Receive the token data from response from register/login API and set it */
+            localStorage.setItem("token", response.data.token); // Makes token survive page refreshes and keep it remembered in the browser so user doesnt have to keep logging in
+            setShowLogin(false);
         }
     }
   return (
