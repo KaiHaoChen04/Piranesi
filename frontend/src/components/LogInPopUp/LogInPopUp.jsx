@@ -38,6 +38,9 @@ const LogInPopUp = ({setShowLogin}) => {
             localStorage.setItem("token", response.data.token); // Makes token survive page refreshes and keep it remembered in the browser so user doesnt have to keep logging in
             setShowLogin(false);
         }
+        else{
+            alert(response.data.message);
+        }
     }
   return (
     <div className='LogInPopUp'>
