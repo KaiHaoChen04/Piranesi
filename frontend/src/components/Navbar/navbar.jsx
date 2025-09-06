@@ -9,7 +9,7 @@ import { StoreContext } from '../../context/StoreContext';
 const Navbar = ({setShowLogin}) => { 
     const [menu, setMenu] = useState();
 
-    const {getTotalCartAmount} = useContext(StoreContext)
+    const {getTotalCartAmount,token,setToken} = useContext(StoreContext)
 
   return (
 
@@ -28,7 +28,15 @@ const Navbar = ({setShowLogin}) => {
             <div className={getTotalCartAmount()>0?'dot':''}></div> 
             {/* Lambda statement that basically checks if there is any items in cart, if yes then we display the orange dot, if not we return an empty div*/}
         </div>
-        <button onClick={() => setShowLogin(true)}>Sign In</button>
+        {!token?<button onClick={() => setShowLogin(true)}>Sign In</button>
+        :<div className='navbar-profile'>
+          <img src={assets.profile_icon} alt="" />
+          <ul className='nav-profile-dropdown'>
+            <li><img src={assets.bag_icon} alt="" />Orders</li>
+            <hr />
+            <li><img src={assets.logout_icon} alt="" />Log out</li>
+          </ul>
+        </div>}
       </div>
     </div>
   );
