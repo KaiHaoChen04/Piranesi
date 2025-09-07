@@ -57,6 +57,15 @@
     top:-8px;
     right:-8px;
 }
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
 @media (max-width:1050px){
     .navbar .logo{
         width:140px;
