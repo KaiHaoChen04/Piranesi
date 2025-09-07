@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useContext } from 'react';
 import './navbar.css';
 import { assets } from '../../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext';
 
 
@@ -11,8 +11,12 @@ const Navbar = ({setShowLogin}) => {
 
     const {getTotalCartAmount,token,setToken} = useContext(StoreContext)
 
-    const logout = () => {
+    const navigate = useNavigate();
 
+    const logout = () => {
+      localStorage.removeItem("token") //Remove token from the localstorage
+      setToken(""); //Set current token as an empty string so it indicates the user has logged out
+      navigate("/");
     }
 
   return (
