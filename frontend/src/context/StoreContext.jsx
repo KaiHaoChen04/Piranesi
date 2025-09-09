@@ -10,10 +10,10 @@ const StoreContextProvider = (props) => {
     const [token, setToken] = useState("");
 
     const addToCart = (itemID) => {
-        if(!cartItem[itemID]){
+        if (!cartItem[itemID]){
             setCartItem((prev)=>({...prev,[itemID]:1}))
         }
-        else{
+        else {
             setCartItem((prev)=>({...prev,[itemID]:prev[itemID]+1}))
         }
     }
@@ -31,8 +31,8 @@ const StoreContextProvider = (props) => {
             }
         }
         return totalAmount;
-    } 
-
+    }
+    
     useEffect(() => {
         if(localStorage.getItem("token")){
             setToken(localStorage.getItem("token")); //This will constantly update the webpage on the token state so user doesn't get logged out if they refresh page
@@ -40,7 +40,6 @@ const StoreContextProvider = (props) => {
     },[])
 
     const contextValue = {
-        clothes_list,
         cartItem,
         setCartItem,
         addToCart,
@@ -48,7 +47,8 @@ const StoreContextProvider = (props) => {
         getTotalCartAmount,
         url,
         token,
-        setToken
+        setToken,
+        clothes_list
     }
 
     return(
