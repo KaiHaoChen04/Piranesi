@@ -3,6 +3,7 @@ import cors from 'cors'
 import { connectDB } from './config/db.js'
 import clothesRouter from './routes/clothesRoute.js'
 import userRouter from './routes/userRoute.js'
+import cartRouter from './routes/cartRoute.js'
 import 'dotenv/config' 
 
 
@@ -21,6 +22,7 @@ connectDB()
 app.use("/api/clothes", clothesRouter);
 app.use("/images", express.static('uploads')) //This endpoint allows image to be displayed in frontend
 app.use("/api/user",userRouter)
+app.use("/api/cart",cartRouter);
 
 //Server handling request and responding
 app.get("/", (req, res)=>{
