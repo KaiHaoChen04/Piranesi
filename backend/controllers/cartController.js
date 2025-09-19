@@ -13,6 +13,8 @@ const addToCart = async (req, res) => {
         else{
             cartData[req.body.itemId] += 1; //Add onto existing entry
         }
+        await userModel.findByIdAndUpdate(req.body.userId, {cartData});
+        res.json({success:true, message:"Added to cart"});
     } catch (error) {
         
     }
