@@ -32,6 +32,7 @@ const removeFromCart = async(req, res) => {
         res.json({success:true, message:"Removed from cart"});
     } catch (error) {
         console.log(error);
+        res.json({success:false, message:"Error"});
     }
 }
 
