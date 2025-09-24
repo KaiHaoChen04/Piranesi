@@ -9,12 +9,15 @@ const StoreContextProvider = (props) => {
     const url = "http://localhost:4000"
     const [token, setToken] = useState("");
 
-    const addToCart = (itemID) => {
+    const addToCart = async (itemID) => {
         if (!cartItem[itemID]){
             setCartItem((prev)=>({...prev,[itemID]:1}))
         }
         else {
             setCartItem((prev)=>({...prev,[itemID]:prev[itemID]+1}))
+        }
+        if(token){
+            await axios.post(url+'/api/cart/add', {itemID}, {headers:{token}});
         }
     }
 
