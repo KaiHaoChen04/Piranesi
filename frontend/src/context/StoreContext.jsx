@@ -38,6 +38,9 @@ const StoreContextProvider = (props) => {
         }
         return totalAmount;
     }
+    const fetchClothesList = async(token) =>{
+        const response = await axios.get(url+'/api/clothes/list');
+    }
     
     useEffect(() => {
         if(localStorage.getItem("token")){
