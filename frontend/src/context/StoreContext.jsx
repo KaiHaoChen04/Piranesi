@@ -41,6 +41,10 @@ const StoreContextProvider = (props) => {
     const fetchClothesList = async(token) =>{
         const response = await axios.get(url+'/api/clothes/list');
     }
+    const loadCartData = async(token) => {
+        const response = await axios.post(url+'/api/cart/get', {}, {headers:{token}});
+        setCartItem(response.data.cartData);
+    }
     
     useEffect(() => {
         if(localStorage.getItem("token")){
